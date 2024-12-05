@@ -1,0 +1,350 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    width: auto;
+  } 
+
+  .Unwallet-balance {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+
+/*unstake me logo ke niche vala header*/
+
+.header2 {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Left and right elements */
+    align-items: center; 
+    padding: 10px; 
+    background-color: #f8f8f8; 
+    border: 1px solid #ccc; 
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 23px 23px;
+    margin-bottom: 15px;
+  }
+  
+  .leftHea {
+    display: flex;
+    gap: 8px; /* Gap between span elements */
+   font-size: 18px;
+  }
+  
+  .rightHea button {
+    padding: 5px 10px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .rightHea button:hover {
+    background-color: lightblue; /* Hover effect */
+  }
+  
+
+/*unstake me logo ke niche vala header*/
+
+  .Unstake-container {
+    width: auto;
+    background: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Header Section */
+   
+  .headerTwo {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Left and right elements */
+    align-items: center; /* Vertically center */
+    border-radius: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .Unstake-header {
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .Unstake-title {
+    align-items: center;
+     display: row;
+  }
+  
+  .Unstake-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .Unstake-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .Unstake-tag {
+    font-size: 14px;
+    color: #888;
+    background: #f5f5f5;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    padding: 2px 8px;
+  }
+  
+  .UnstakeRight  {
+    cursor: pointer;
+    font-size: 16px;
+    color: #888;
+    text-decoration: underline;
+  }
+  .UnstakeRight:hover{
+    text-decoration: none;
+  }
+  /* Unstaking Period */
+
+  .Ununstaking-period {
+    display: flex;
+     justify-content: space-between; 
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #141313;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 10px;
+
+  }
+  
+  .Unperiod-value {
+    font-weight: bold;
+    color: #000;
+  }
+  
+  /* Wallet Section */
+  .Unwallet-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #131212;
+  }
+  
+  .Unwallet-balance {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    
+  }
+  
+  .Unsmall-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  .Unbalance-value {
+    font-weight: bold;
+    color: #000;
+    /* gap: 3px; */
+  }
+  
+  /* Input Section */
+  .Uninput-section {
+    margin-top: 20px;
+  }
+  
+  .Uninput-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    padding: 8px;
+  }
+  
+  .Unstake-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    text-align: right;
+    color: #555;
+  }
+  
+  .Unstake-input::placeholder {
+    color: #ccc;
+  }
+  
+  .Unmax-button {
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    background: #f8fdf8;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .Unmax-button:hover {
+    background: #eff8ef;
+  }
+  
+  /* Stake Button */
+  .Unstake-button {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: #ccc;
+    border: none;
+    border-radius: 8px;
+    cursor: not-allowed;
+    border-radius: 50px;
+  }
+  
+  .Unstake-button:enabled {
+    background: #000;
+    cursor: pointer;
+  }
+  
+
+
+  @media (max-width: 1200px) {
+
+/* logo ke niche vala unstaking balance */
+
+.leftHea {
+    display: flex;
+    gap: 8px; /* Gap between span elements */
+   font-size: 12px;
+  }
+  
+  .rightHea button {
+    padding: 4px 3px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 50px;
+    font-size: 9px;
+  }
+
+  /* logo ke niche vala unstaking balance */
+
+
+    .Unstake-container {
+      width: 100%;
+      /* padding: 15px; */
+      text-align: center;
+    }
+
+    .Unnwallet-section {
+        font-size: 12px;
+        padding: 19px 19px;
+    }
+  
+    .Unstake-header {
+      /* flex-direction: column; */
+      align-items: flex-start;
+    }
+  
+    .Unstake-title {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .Unstake-name {
+      font-size: 16px;
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+  
+    .Unstake-tag {
+      font-size: 12px;
+      padding: 2px 6px;
+    }
+  
+    .Unview-delegations {
+      font-size: 12px;
+      align-self: flex-end;
+      margin-top: 10px;
+    }
+  
+
+    .Ununstaking-period,
+    .Unwallet-section {
+      font-size: 13px;
+      /* flex-direction: column; */
+      align-items: flex-start;
+
+      /* gap: 40px; */
+    }
+  
+    .Unwallet-section {
+      margin-bottom: 15px;
+    }
+  
+    .Uninput-wrapper {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .Unstake-input {
+      font-size: 14px;
+      text-align: left;
+      margin-bottom: 10px;
+      padding: 8px;
+      width: 100%;
+    }
+  
+    .Unmax-button {
+      width: 100%;
+      font-size: 13px;
+      padding: 8px;
+      margin: 0px;
+    }
+  
+    .Unstake-button {
+      padding: 10px 0;
+      font-size: 14px;
+      margin: 0px;
+    }
+  }
+
+  .UnzkFi {
+    width: 50px; 
+    height: 50px; 
+    object-fit: contain; /* Ensures the image fits inside the container */
+    border-radius: 100px; /*  Adds rounded corners */
+    display: inline-block; /* Keeps it inline if used with text or other elements */
+  }
+
+  .UnzkFi2, .UnzkFi3{
+    width: 32px; 
+    height: 32px; 
+    object-fit: contain; 
+    border-radius: 100px; 
+    display: inline-block; 
+  }
+  
+  /* Responsive for smaller devices */
+  @media screen and (max-width: 768px) {
+    .UnzkFi {
+      width: 40px; /* Resize logo for smaller screens */
+      height: 40px;
+    }
+  }
+  

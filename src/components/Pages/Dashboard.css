@@ -1,0 +1,387 @@
+General styling
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+
+/* ***************************************navbar making************/
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #eeeffd, #e0e1eb);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+} 
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.right-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto; 
+  color: linear-gradient(to right, #eeeffd, #e0e1eb);
+}
+
+.zkFiOne {
+  height: 70px;
+  margin-right: 25px;
+}
+.zkFi11 {
+  height: 35px;
+  width: 35px;
+  border-radius: 100px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  object-fit: contain; 
+  vertical-align: middle;
+}
+
+.nav-button {
+  background-color: transparent;
+  border: none;
+  font-size: 17px;
+  margin-right: 20px;
+  padding: 8px 8px;
+  cursor: pointer;
+  border-radius: 15px;
+  font-weight: bold;
+  /* color: #707070; */
+  color: rgb(59, 58, 58);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-button:hover {
+  background-color: rgb(241, 230, 232);
+}
+
+
+.right-button {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #eeeffd, #e0e1eb);
+  color: linear-gradient(to right, #eeeffd, #e0e1eb);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.right-button:hover {
+  background-color: #2e8cf1;
+}
+
+
+@media screen and (max-width: 660px) {
+  .navbar {
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%; 
+    margin-bottom: 10px;
+  }
+
+  .right-section {
+    align-items: flex-start;
+  }
+}
+
+
+@media screen and (max-width: 660px) {
+  .nav-button,
+  .right-button {
+    width: 100%; 
+    margin-bottom: 10px;
+  }
+
+  .left-section {
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+}
+
+
+
+/**************** navbar making************************************ */
+
+
+.staking-page {
+  width: auto;
+  margin: 0px 90px;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #bebbbb;
+  /* box-shadow: 0 2px 4px #bebbbb(79, 77, 77, 0.1); */
+}
+@media (min-width: 0px) and (max-width: 767px) {
+.staking-page{
+    margin: 0px 15px;
+}
+}
+
+/*%%%%%%%%%%%*/
+/* Flexbox container for header items */
+.header {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto the next line */
+  padding: 20px;
+  margin: 0px 80px;
+  color: #3b566E;
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #131212;
+}
+
+/* For large screens (≥1200px) - 4 items per row */
+@media (min-width: 1200px) {
+  .zkHeading {
+    flex: 0 0 23%; /* 4 items per row */
+    margin-bottom: 20px; /* Space between rows */
+  }
+}
+
+/* For medium screens (992px - 1199px) - 3 items per row */
+@media (max-width: 1199px) and (min-width: 992px) {
+  
+  .zkHeading {
+    flex: 0 0 31%; /* 3 items per row */
+    margin-bottom: 20px;
+  }
+
+  /* Center the fourth item */
+  .zkHeading:nth-child(4) {
+    flex: 0 0 100%; /* Take full width in the second row */
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+/* For smaller tablets (768px - 991px) - 2 items per row */
+@media (max-width: 991px) and (min-width: 768px) {
+  .zkHeading {
+    flex: 0 0 48%; /* 2 items per row */
+    margin-bottom: 20px;
+  }
+}
+
+/* For mobile screens (≤767px) - 1 item per row */
+@media (max-width: 767px) {
+  .zkHeading {
+    flex: 0 0 100%; /* 1 item per row */
+    margin-bottom: 20px;
+    margin: 20px -50px;
+  }
+}
+
+/* For very small screens (≤500px) - 1 box */
+@media (max-width: 100px) {
+  .zkHeading {
+    display: block; /* Stack all items in one column */
+  }
+
+  .header {
+    width: 100%; /* Full width of the container */
+    margin-bottom: 10px; /* Add space between items */
+  }
+}
+
+/* Styling for individual items */
+.zkHeading {
+  background-color: #f5f5f5;
+  padding: 20px 0px;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: none;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+
+  
+}
+
+
+.zkHeading p {
+  margin: 0; /* Removes any default margin */
+  line-height: 25px; 
+   text-align: left; 
+  
+
+}
+
+.balance-value {
+  font-weight: bold;
+  /* font-size: 18px;  */
+}
+
+
+.header p:first-child {
+  font-weight: bold;
+  color: #555;
+}
+
+.header p:last-child {
+  font-size: 1.2em;
+  color: #333;
+}
+
+
+/* View container for displaying each section (Stake, Unstake, Claim) */
+.view-container {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .staking-page {
+    padding: 3px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+ 
+  .tab-buttons button {
+    width: 100%;
+    font-size: 1.2em;
+  }
+
+  .view-container {
+    padding: 15px;
+  }
+}
+
+
+/* Tab Buttons */
+.tab-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.tab-buttons button {
+   flex: 1;
+  padding: 12px 0; 
+ 
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #3b566E;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  text-align: center;
+} 
+
+/* Hover State */
+.tab-buttons button:hover {
+  color: black;
+}
+
+/* Active Tab Styling */
+.tab-buttons button.active {
+  font-weight: bold;
+  color: black;
+}
+
+.tab-buttons button.active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+/* ********Footer */
+.footer {
+  display: flex;
+  justify-content: space-between; /* Align left and right content */
+  align-items: center; /* Center content vertically */
+  padding: 10px 20px;
+  background: linear-gradient(to right, #eeeffd, #e0e1eb);
+  font-size: 14px; /* Adjust text size */
+  color: #6f6e6e; /* Text color */
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+ 
+}
+
+.footer-links a {
+  /* color: black;  */
+  color: #6f6e6e;
+  text-decoration: underline;
+  margin: 0 5px;
+
+}
+
+.footer-links a:hover {
+  /* text-decoration: underline; */
+  color: #343232;
+}
+
+.footer-links span {
+  margin: 0 5px;
+  color: #6f6e6e;
+}
+
+/* *********Footer */
+
+
+
+
+
+
+
+
+
