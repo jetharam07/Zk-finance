@@ -30,23 +30,8 @@ const Dashboard = () => {
     <div>
 
 {/* navbar making */}
-// <div className="navbar">
-//   <div className="left-section">
-//   <img src= {zk} className="zkFiOne" alt="..." />
-//     <button className="nav-button">Cummunity</button>
-//     <button className="nav-button">About Us</button>
-//     <button className="nav-button">Contact</button>
-//   </div>
-  
-//   <div className="right-section">
-//     <button className=" right-button"><ConnectButton/></button>
-//   </div>
-// </div>
     <Navbar/>
-
-
   {/* navbar making */}
-
 
 
 <div className="header">
