@@ -1,0 +1,137 @@
+/* --- General Styles --- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* --- Desktop Navbar --- */
+  .desktop-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background: linear-gradient(to right, #eeeffd, #e0e1eb);
+    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .desktop-left-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+  }
+  
+  .desktop-logo {
+    height: 42px;
+  }
+  
+  .desktop-nav-button {
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    margin-right: 17px;
+    padding: 8px 8px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-weight: bold;
+    color: rgb(59, 58, 58);
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .desktop-nav-button:hover {
+    background-color: rgb(241, 230, 232);
+  }
+  
+  .desktop-right-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .desktop-connect-button {
+    border: none;
+    cursor: pointer;
+  }
+  
+ 
+  
+  /* --- Mobile Navbar --- */
+  .mobile-navbar {
+    color: linear-gradient(to right, #eeeffd, #e0e1eb);
+    padding: 10px 20px;
+   
+  }
+  
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .mobile-left-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .mobile-logo {
+    height: 35px;
+  }
+  
+  .mobile-connect-button {
+    border: none;
+    padding: 0px 0px;
+    font-size: 11px;
+    cursor: pointer;
+  }
+  
+  
+  .mobile-drawer-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .mobile-menu {
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .mobile-menu.active {
+    display: flex;
+  }
+  
+  .mobile-nav-button {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333333;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .mobile-nav-button:hover {
+    background-color: rgb(241, 230, 232);
+  }
+  
+  /* --- Media Query for Mobile View --- */
+  @media screen and (max-width: 850px) {
+    .desktop-navbar {
+      display: none;
+    }
+    .mobile-navbar {
+      display: block;
+    }
+  }
+  
+  @media screen and (min-width: 851px) {
+    .mobile-navbar {
+      display: none;
+    }
+  }
+  
