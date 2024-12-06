@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import StakeView from "./StakeView";
 import UnstakeView from "./UnstakeView";
 import ClaimRewardsView from "./ClaimRewardsView";
+import Navbar from "./Navbar";
 import "./Dashboard.css"; 
 import zk from "../../Assets/logo_menu.png"
 import zk2 from "../../Assets/logo_main.png"
 import { ConnectButton } from '@rainbow-me/rainbowkit';
+
 
 const Dashboard = () => {
   const [currentView, setCurrentView] = useState("stake");
@@ -28,18 +30,19 @@ const Dashboard = () => {
     <div>
 
 {/* navbar making */}
-<div className="navbar">
-  <div className="left-section">
-  <img src= {zk} className="zkFiOne" alt="..." />
-    <button className="nav-button">Cummunity</button>
-    <button className="nav-button">About Us</button>
-    <button className="nav-button">Contact</button>
-  </div>
+// <div className="navbar">
+//   <div className="left-section">
+//   <img src= {zk} className="zkFiOne" alt="..." />
+//     <button className="nav-button">Cummunity</button>
+//     <button className="nav-button">About Us</button>
+//     <button className="nav-button">Contact</button>
+//   </div>
   
-  <div className="right-section">
-    <button className=" right-button"><ConnectButton/></button>
-  </div>
-</div>
+//   <div className="right-section">
+//     <button className=" right-button"><ConnectButton/></button>
+//   </div>
+// </div>
+    <Navbar/>
 
 
   {/* navbar making */}
